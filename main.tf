@@ -14,10 +14,5 @@ resource "google_compute_instance" "default" {
   network_interface {
     subnetwork         = var.subnet
     subnetwork_project = var.host_project
-
-
-    access_config {
-      // Ephemeral public IP
-    }
   }
 }
